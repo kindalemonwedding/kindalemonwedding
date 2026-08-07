@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
 <title>Kinda &amp; Lemon &mdash; October 23, 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <style>
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root { color-scheme: light only; }
 :root {
   --azure:   #1d5fa8;
   --azure-d: #1a57a0;
@@ -317,6 +319,27 @@ nav {
   /* STAY DARK SECTION */
   .stay-bg { padding:3rem 1.25rem; }
   .stay-inner { max-width:100%; }
+}
+
+
+/* Force light mode regardless of device settings */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --azure:   #1d5fa8;
+    --azure-d: #1a57a0;
+    --sky:     #2e7fd4;
+    --dusk:    #c4805a;
+    --gold:    #c9963a;
+    --blush:   #e8c4a0;
+    --parchment: #f8faff;
+    --white:   #ffffff;
+    --ink:     #1a3a6b;
+    --muted:   #6a8bbf;
+    --border:  #c8d8f0;
+    --border-warm: #d4e2f4;
+  }
+  body { background: #f8faff !important; color: #1a3a6b !important; }
+  .hero { background: #f8faff !important; }
 }
 
 </style>
