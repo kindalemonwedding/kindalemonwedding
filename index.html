@@ -252,6 +252,73 @@ nav {
 .car-name { font-family:"Cormorant Garamond",serif; font-size:1.3rem; font-weight:300; color:var(--ink); margin-bottom:0.25rem; }
 .car-desc { font-size:11px; color:var(--muted); margin-bottom:0.6rem; }
 .car-dot-color { width:18px; height:18px; border-radius:50%; margin:0 auto; border:0.5px solid rgba(0,0,0,0.1); }
+
+/* ── MOBILE ── */
+@media (max-width: 640px) {
+
+  /* NAV */
+  nav { padding:0.75rem 1rem; flex-wrap:wrap; gap:0.5rem; }
+  .nav-logo { font-size:1rem; }
+  .nav-links { display:flex; flex-wrap:wrap; gap:0; justify-content:center; width:100%; }
+  .nav-links a { font-size:9px; letter-spacing:0.1em; padding:0.4rem 0.6rem; }
+
+  /* HERO */
+  .hero { padding:4rem 1.5rem 3rem; min-height:auto; }
+  .hero-names { font-size:3.5rem; }
+  .hero-amp { font-size:3rem; }
+  .hero-eyebrow { font-size:9px; margin-bottom:1.5rem; }
+  .hero-date, .hero-venue { font-size:10px; }
+  .hero-rule { margin:1.75rem auto; }
+  .hero-nav-hints { display:none; }
+
+  /* COUNTDOWN */
+  .cd-strip { padding:2rem 1rem; }
+  .cd-grid { grid-template-columns:repeat(2,1fr); max-width:100%; }
+  .cd-num { font-size:2.8rem; }
+
+  /* SECTIONS */
+  .section { padding:3rem 1.25rem; }
+  .s-title { font-size:2rem; }
+  .dark-section { padding:3rem 1.25rem; }
+
+  /* EVENT DETAILS */
+  .ev-grid { grid-template-columns:1fr; }
+  div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
+
+  /* VENUE BAR */
+  .venue-bar { flex-direction:column; align-items:flex-start; gap:0.75rem; }
+
+  /* RSVP */
+  .rsvp-row { grid-template-columns:1fr; }
+
+  /* DRESS CODE */
+  .dc-buttons { grid-template-columns:1fr 1fr; }
+  .dc-btn { padding:2rem 1rem; }
+  .dc-btn-icon span { font-size:2rem !important; }
+  .dc-btn-label { font-size:1.3rem; }
+  .carousel-wrap { max-width:100%; }
+  .car-arrow { width:32px; height:32px; font-size:0.9rem; }
+
+  /* STAY */
+  .promo-block { padding:1.25rem; }
+  .promo-code-display { font-size:2.2rem; }
+  .promo-options { grid-template-columns:1fr !important; }
+  .hotel-row { flex-direction:column; }
+  .hotel-km { border-left:none; border-top:0.5px solid rgba(255,255,255,0.15); flex-direction:row; gap:0.5rem; justify-content:flex-start; padding:0.75rem 1.5rem; }
+
+  /* GIFTS */
+  .gift-item { flex-direction:column; align-items:flex-start; gap:0.5rem; }
+
+  /* FOOTER */
+  .site-footer { padding:2rem 1rem; }
+  .f-names { font-size:1.6rem; }
+  .f-sub { font-size:8px; }
+
+  /* STAY DARK SECTION */
+  .stay-bg { padding:3rem 1.25rem; }
+  .stay-inner { max-width:100%; }
+}
+
 </style>
 </head>
 <body>
